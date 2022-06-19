@@ -1,15 +1,16 @@
-C-Language-Environment-Setting with VS code
+C-Language Environment Setting with VS code on Windows
 ====
-How to build your first C-Language environment setting on Windows/macOS with VS Code.
+How to build your first C-Language environment setting on Windows with VS Code.
 <br>
 <br>
 ## For Windows user:
-To build your C-Language environment, we can roughly divide the steps into the following 4 steps:
+To build your C-Language environment, we can roughly divide the steps into the following 5 steps:
 <br>
 * Download VS Code
 * Download MinGW-W64
 * Download LLVM
 * Other setting
+* Begin your first code
 
 ### Download VS Code
 1. Go to [VS Code official website](https://code.visualstudio.com/) and click `Download for Windows`, then it will download automatically. <br><br>
@@ -71,6 +72,28 @@ If not, try following the steps above carefully again.<br><br>
 ![26](https://user-images.githubusercontent.com/107752584/174469568-3c98185d-4461-473b-8253-2a4823774b21.png)<br>
 ![27](https://user-images.githubusercontent.com/107752584/174469569-39fe66ec-2843-4225-a58f-05c555340d3b.png)<br>
 ![28](https://user-images.githubusercontent.com/107752584/174469611-da91c529-6a5e-4651-9adf-6355e24e1fc6.png)<br><br>
-19. Go to wherever you prefer to put your code in (For me I create a folder `C` at `D:\Coding`), then creat another new folder `.vscode` in it.<br><br>
+19. Go to wherever you prefer to put your code in (For me I create a folder `C` at `D:\Coding`), then create another new folder `.vscode` in it.<br><br>
 ![29](https://user-images.githubusercontent.com/107752584/174469660-b6c76f6d-f589-479c-bdec-923985f505b5.png)<br><br>
-20. Drag the `.vscode` folder into `VS Code App`
+20. Open the `.vscode` folder you create in step 19, then paste the 4 files (I have attached them in the above repository.) in. <br><br>
+![30](https://user-images.githubusercontent.com/107752584/174469964-14ff2a8f-4caa-4329-8a3c-ae29e2f6cded.png)<br><br>
+20. In `VS Code App` click `File` > `Open Folder` and choose your folder (For me, I choose my `C` folder established at step 19).<br><br>
+![31](https://user-images.githubusercontent.com/107752584/174470196-383916dd-08b8-4143-a772-545ee0bd9b3a.png)<br><br>
+21. Create a new file and named `XXXX.c (or XXXX.cpp)`.<br><br>
+![32](https://user-images.githubusercontent.com/107752584/174470336-c467627e-1481-4762-8ecb-392c3acc839e.png)<br><br>
+22. Go to your `.vscode` folder and find out your `XXXX.c (or XXXX.cpp)` file, then move it from `.vscode` to `your folder`(For me is `C`).<br><br>
+![33](https://user-images.githubusercontent.com/107752584/174471047-32db2c41-6846-4758-abfa-b8db4d1a3d33.png)<br>
+![34](https://user-images.githubusercontent.com/107752584/174471049-f3f6d519-7a09-475e-afff-ec9cb674418e.png)<br><br>
+
+### Begin your first code!
+23. You can try "Hello world!" for your first code!
+```
+#include <stdio.h>
+int main() {
+    printf("Hello World");
+    return 0;
+}
+```
+![35](https://user-images.githubusercontent.com/107752584/174471304-1cc025ee-2858-4950-877c-9b5e413665a3.png)<br><br>
+24. Then click `File` > `Auto Save`, and press `Ctrl + Alt + N` to run the code.<br><br>
+![36](https://user-images.githubusercontent.com/107752584/174471427-1932f79f-b34f-41cb-b585-9d21c5de3a65.png)
+## That's all!
